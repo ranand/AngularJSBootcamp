@@ -1,0 +1,90 @@
+AngularJS Bootcamp Day1 Notes
+-----------------------------
+1. Protractor - built on top of selenium (as are Capybara, Cucumber)
+2. git checkout -f step-0
+3. angular is working with the DOM
+4. event - DOMContentLoaded (converts to angular based after the event is loaded)
+5. only one ng-app on the page. For multiple, manual bootstrapping.
+6. {{ }} -> binding is also a directive. (<span ng-bind="'yet' + '!'"></span>)
+7. ng-cloak
+8. {{:: greeting}} -> one way/time binding
+9. components/elements level directives??
+10. .controller -> method on the module.
+11. Resource: John Papa -> Angular Style Guide (https://github.com/johnpapa/angular-styleguide)
+12. module - code organization. not really namespaces.
+13. don't have many modules.
+14. [] -> in module, create a new module. Without the empty array, get a reference.
+15. ES2015 -> namespaces, modules etc.
+16. gulp, grunt, requirejs, inject -> dynamically load the JS.
+17. | -> filter operator (in Angular 1.x), pipe (in Angular 2.x)
+18. custom filters?
+19. ng-bind : given an expression, watch it. not about changing anything.
+20. view -> template + scope
+21. order of filters? for correctness of view (filter, followed by orderby as an example)
+22. Resource: https://docs.angularjs.org/guide/expression
+23. Resource: http://teropa.info/blog/2014/03/23/angularjs-expressions-cheatsheet.html
+24. rootScope -> every other scope inherits from this.
+25. npm test
+26. $controller -> in test, service that creates a new controller.
+27. In git checkout -f step-4 : inject (built in dependecy injection)
+28. module, inject -> angular helper functions.
+29. module.exports?
+30. autoWatch:true, doesn't watch the config file. stop and restart (to re-read the config file).
+31. Jasmine - assertion library. (describe, expect, it, beforeEach). used by angular team.
+32. Karma - test runner. Starts the tests, brings up the browser. Execute the jasmine code. Karma is written in node.
+33. Mocha - competes with Jasmine. used by Node apps.
+34. Qunit - big in Jquery world. Not in Angular.
+35. debugging karma tests? debugging angular tests? - use logging instead of step by step debugging.
+36. Phantom - headless test kit. Run tests on Phantom when running unit tests on sand boxes (without browsers)
+37. $http takes care of parsing JSON (which is a text file) to Javascript objects. Can parse xml as well,
+    by including an interceptor.
+38. Resource: https://docs.angularjs.org/api/ng/service/$http
+39. When brand new instance is created, angular also provides you with new instances of the dependencies.
+40. DI is performed by taking a function, calling toString on it, and then parsing the method arguments to figure out
+    what is passed.
+41. Calling toString on a JS function, will give you the entire function as is.
+42. Strings don't get touched by minification. For example, we can try this and it will work. That is why the string
+    in the array is needed. (Annotating the code)
+    phonecatApp.controller('PhoneListCtrl', ['$scope', '$http', function($scope, h) {
+      h.get('phones/phones.json').success(function(data) {
+        $scope.phones = data;
+      });
+43. Don't do annotation manually.
+44. ng-annotate : run before minifying angular code. (pre-minifier)
+45. Reference: https://github.com/olov/ng-annotate
+46. Run as task under grunt, gulp or maven.
+47. Anything under angular services are singletons. There is only one of them.
+48. httpBackend -> allows us to handle how the $http works. (Step 5 in Phonecat tutorial)
+49. $httpBackend.flush(); -> is when $http success handler (callback) is called.
+50. angular-mocks.js provides a mock version of the httpBackend
+51. _$httpBackend_ if we need to use the same name as the one by Angular. Angular will only process the name
+    between the wings. Use _ only.
+52. (Step 7) : ngRoute : module from angular-route.js
+53. $routeProvider depends on ngRoute which depends on angular-route
+54. Angular does only pattern matching on routes. Doesn't care about the label in /phones/:phoneId.
+55. routes have additional parameters, most useful is resolve property. resolve some $promises.
+56. Resource : https://github.com/angular-ui/ui-router
+57. component router when available?
+58. | checkmark (step-9)
+59. controller should not have any business logic.
+60. .filter('convert', function() {
+      return function(input) {
+        var cVal;
+        if(angular.isDefined(input)) {
+          input = input.replace(/\D/g,'');
+          cVal = (input / 1024) + "GB";
+
+        }
+        //var result = cVal.replace('MB', 'GB');
+        return cVal;
+      }
+    -- the first function can take dependency injection parameters.
+61. $stateful = true (stateful filter). stateless by default. no http calls inside a filter.
+62. directives are better than filters (performance wise and provides lot more)
+63. .filter('checkmark') -> creates an injectable checkmarkFilter.
+64. one time binding applies to the specific watch and not to the model.
+65. angular-animate.js
+66. Resource: https://daneden.github.io/animate.css/
+67. Resource: https://github.com/Hendrixer/ngFx
+68. Resource: http://ionicframework.com/
+69. 
