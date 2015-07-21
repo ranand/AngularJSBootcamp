@@ -33,7 +33,7 @@ angular.module('watchExamples', [])
     // });
 
     //create a watch on zipcode
-    $scope.$watch('vm.person.zipcode', function(newValue, oldValue) {
+    $scope.$watch(function() {return vm.person.zipcode}, function(newValue, oldValue) {
       $log.log("Zipcode has changed from: " + oldValue + " to: " + newValue);
       if (angular.isDefined(newValue)) {
         if (newValue.length === 5) {

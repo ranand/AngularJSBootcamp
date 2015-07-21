@@ -60,3 +60,6 @@
 49. watchGroup ??
 50. deepwatch (setting true as the third param)
 51. watchCollection
+52. Resource : http://underscorejs.org/
+53. Resource : https://lodash.com/
+54. 
