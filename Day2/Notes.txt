@@ -62,4 +62,20 @@
 51. watchCollection
 52. Resource : http://underscorejs.org/
 53. Resource : https://lodash.com/
-54. 
+54. ng-change?
+55. Don't call functions from your view. Angular's controller will get hit every single time without the
+    intellisense that this event might not have changed. This is a performance hit.
+56. the digest cycle is looked through a maximum of 10 times before an abort is called.
+57. Resource : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+58. 'use strict'; - if you define global variable without definition, it will throw an error (an example)
+59. 'use strict'; - can be used inside a function as well. It will limit itself to that scope.
+60. IIFE - Immediately Invoked Function Expression.
+61. IIFE vs Self invoking functions?? Self invoking are known as recursive functions?
+62. JS supports ASI - Automatic Semicolon Insertion.
+63. Resource : Learning JS design patterns (book)
+64. Resource : Maintainable JS. (book)
+65. gulp - use refs (plugin to annotate, uglify or minify)
+66. Resource : gulp-inject (https://www.npmjs.com/package/gulp-inject)
+67. Services - related code and data and put it under a name that can be injected.
+68. .service or .factory or .value or .constant or .provider or .decorator (can be a SERVICE)
+69. 

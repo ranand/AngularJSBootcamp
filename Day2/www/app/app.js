@@ -3,7 +3,8 @@
 angular.module('day2', [
   'ngRoute',
   'controllerExamples',
-  'watchExamples'
+  'watchExamples',
+  'serviceExamples'
 ])
   // followed by a controller.
   // inject $scope
@@ -31,7 +32,7 @@ angular.module('day2', [
       })
       .when('/services', {
         //template: 'This is where my menu will live.'
-        templateUrl: 'app/services/services.html'
+        templateUrl: 'app/serviceExamples/serviceExamples.html'
       })
       .when('/promises', {
         //template: 'This is where my menu will live.'

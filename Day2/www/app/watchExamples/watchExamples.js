@@ -33,14 +33,19 @@ angular.module('watchExamples', [])
     // });
 
     //create a watch on zipcode
-    $scope.$watch(function() {return vm.person.zipcode}, function(newValue, oldValue) {
+    $scope.$watch(function() {return vm.person.zipcode;}, function(newValue, oldValue) {
       $log.log("Zipcode has changed from: " + oldValue + " to: " + newValue);
+      if(!angular.isDefined(newValue)) {
+        return;
+      }
       if (angular.isDefined(newValue)) {
         if (newValue.length === 5) {
           if (newValue == "90210") {
             vm.person.city = "Beverly Hills, CA";
           } else if(newValue == "94041") {
             vm.person.city = "Mountain View, CA";
+          } else {
+            $log.warn("Did not find that zipcode.")
           }
         }
       }
