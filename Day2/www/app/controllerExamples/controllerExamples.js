@@ -1,8 +1,10 @@
 angular.module('controllerExamples', [])
-  .controller('FirstController', function($scope) {
-    $scope.firstname = "Anand";
+  .controller('FirstController', function($scope, $log) {
+    // $scope.firstname = "Anand";
+    var vm = this;
+    vm.firstname = "anand"
   })
   .controller('SecondController', function($scope) {
-    $scope.lastname = "Ramakrishnan";
+    // $scope.firstname = "Anand";
   })
 ;

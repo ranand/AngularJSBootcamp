@@ -46,4 +46,5 @@
     explicit about where the models come from - as a result, automatically follow the dot rule.
 39. we can fall back to using JS's this keyword instead of $scope in the controller.
 40. capture 'this' ahead : var vm = this;
-41. 
+41. inject $log for logging.
+42. 
