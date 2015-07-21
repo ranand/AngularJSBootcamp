@@ -1,0 +1,21 @@
+{
+  "name": "Day2",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ranand/AngularJSBootcamp",
+  "authors": [
+    "Anand Ramakrishnan <ramak.anand@gmail.com>"
+  ],
+  "description": "sample app for angular bootcamp",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5"
+  }
+}

@@ -1,0 +1,27 @@
+1. npm init in new project
+2. npm install bower --save (bower is a package manager)
+3. npm - for tooling (dev environment, automation tools like gulp or grunt) - server dependencies.
+4. bower - focused on client side dependencies (things that run inside the browser)
+5. two PM's exists because of dependency models.
+6. bower - flat dependency model.
+7. npm install gulp gulp-connect --save
+8. gulp - automation utility. (JS version) (grunt and broccoli are alternatives) - similar to rake in rails
+9. gulp-connect : allows to run a webserver using gulp. (connect webserver - node based)
+10. --save : all being remembered in package.json
+11. sudo npm install -g bower : put the bower command on my system (global)
+12. bower init
+13. bower.json (bower's version of package.json)
+14. .bowerrc - install dependencies in a directory where my browser cant reach, but still read.
+    ranand@Anand-Rs-MacBook-Pro Day2 (master) $ cat .bowerrc
+    {
+      "directory": "www/bower_components"
+    }
+15. bower install angular --save (stored in the prev. mentioned directory)
+16. bower install bootstrap --save
+17. Resource : yeoman.io
+18. angular apps don't do much without a webserver though they can load.
+19. sudo npm install -g gulp
+20. write gulpfile.js
+21. gulp connect (brings up the server)
+22. update gulpfile.js, type gulp in command.
+23. 

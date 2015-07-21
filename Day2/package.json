@@ -1,0 +1,16 @@
+{
+  "name": "day2",
+  "version": "1.0.0",
+  "description": "Day2 of angular bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anand Ramakrishnan",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  }
+}
