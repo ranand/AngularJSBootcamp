@@ -2,7 +2,8 @@
 // add ngRoute dependency if using $routeProvider
 angular.module('day2', [
   'ngRoute',
-  'controllerExamples'
+  'controllerExamples',
+  'watchExamples'
 ])
   // followed by a controller.
   // inject $scope
@@ -24,7 +25,9 @@ angular.module('day2', [
       })
       .when('/watches', {
         //template: 'This is where my menu will live.'
-        templateUrl: 'app/watches/watches.html'
+        templateUrl: 'app/watchExamples/watchExamples.html',
+        controller: 'WatchExamplesController',
+        controllerAs: 'vm'
       })
       .when('/services', {
         //template: 'This is where my menu will live.'

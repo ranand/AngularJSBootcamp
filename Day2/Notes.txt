@@ -47,4 +47,16 @@
 39. we can fall back to using JS's this keyword instead of $scope in the controller.
 40. capture 'this' ahead : var vm = this;
 41. inject $log for logging.
-42. 
+42. every event kicks off a digest cycle. (digest cycle : maintain a huge hierarchy of keys, value (old and new),
+    go through them, update them, do it over again.)
+43. anything changes, refresh the DOM.
+44. one way binding - it stops watching and digest cycle is complete after first time.
+45. every bind gets a $watch. (observe in console) | ng-model also implies binding
+46. $scope.$watch -> hooks you into the digest cycle.
+47. The very first time, before entering vm.person.firstname (in watchExamples.js) -> console will throw
+    an error. This is because there is no object called vm.person yet. Once you start typing, it will
+    become alright.
+48. Watchers are removed when scope is garbage collected.
+49. watchGroup ??
+50. deepwatch (setting true as the third param)
+51. watchCollection
