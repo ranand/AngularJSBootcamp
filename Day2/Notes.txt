@@ -32,4 +32,18 @@
 28. ng-view (in index.html) is needed once you start defining templates/routes to templates.
 29. always provide otherwise in routeProvider as well.
 30. create some directory structure (by adding menu directory and menu.html)
-31. 
+31. make sure to add new controllers as dependencies in the main module.
+32. controllers - if two divs refer to same controller, its still two controllers. Since Angular finds
+    the controller and creates a new instance. Use an ng-model and experiment in each div. It won't change
+    in the second controller.
+33. if one div is inside another div, things change (with ng-model) : scopes are related to one another based
+    on html hierarchy.
+34. $scope's inherit from $rootScope or within one another.
+35. when reading, $scope looks up the hierarchy. (same ng-model name)
+36. dot rule in angular??
+37. scope is not the model, scope is where you put the models.
+38. controller as syntax?? - giving controller an alias. (ng-controller = "FirstController as first") :
+    explicit about where the models come from - as a result, automatically follow the dot rule.
+39. we can fall back to using JS's this keyword instead of $scope in the controller.
+40. capture 'this' ahead : var vm = this;
+41. 
