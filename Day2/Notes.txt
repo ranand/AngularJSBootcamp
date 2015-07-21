@@ -27,4 +27,9 @@
 23. We are going to create some navigation.
 24. bower install angular-route --save / add to script
 25. create app directory / app.js / add to script
-26. 
+26. we have access to configuration phase using .config
+27. add routeProvider, but make sure the module depends on ngRoute
+28. ng-view (in index.html) is needed once you start defining templates/routes to templates.
+29. always provide otherwise in routeProvider as well.
+30. create some directory structure (by adding menu directory and menu.html)
+31. 
