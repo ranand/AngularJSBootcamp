@@ -24,4 +24,7 @@
 20. write gulpfile.js
 21. gulp connect (brings up the server)
 22. update gulpfile.js, type gulp in command.
-23. 
+23. We are going to create some navigation.
+24. bower install angular-route --save / add to script
+25. create app directory / app.js / add to script
+26. 

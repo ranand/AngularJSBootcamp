@@ -1,12 +1,12 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="day2">
   <head>
     <title>Angular Bootcamp demos</title>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app/app.js"></script>
   </head>
-  <body>
-    {{'Hello ' + 'World!'}}
-
-    <p>one plus one is {{1 + 1}}</p>
+  <body ng-controller="mainController">
+    {{ greeting }} World!
   </body>
 </html>
