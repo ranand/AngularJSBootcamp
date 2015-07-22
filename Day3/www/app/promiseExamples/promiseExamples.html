@@ -1,0 +1,13 @@
+<h2>Promise Examples</h2>
+
+<!-- <div ng-controller="PromiseExamplesController as vm">
+  <pre ng-bind="vm.person1 | json"></pre>
+  <pre ng-bind="vm.person2 | json"></pre>
+</div> -->
+
+<p>Enter person id: <input ng-model="vm.person_id"></p>
+<p><button ng-click="vm.addToList()">Add to List</button></p>
+<p><button ng-click="vm.gatherPeople()">Gather People</button></p>
+<div ng-controller="PromiseExamplesController as vm">
+  <pre ng-bind="vm.persons | json"></pre>
+</div>

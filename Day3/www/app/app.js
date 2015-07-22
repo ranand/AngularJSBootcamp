@@ -1,5 +1,5 @@
 //create a module and start adding dependencies.
-angular.module('day3', ['ngRoute', 'menu', 'serviceExamples'])
+angular.module('day3', ['ngRoute', 'menu', 'serviceExamples', 'promiseExamples', 'directiveExamples'])
   .controller('mainController', function($scope) {
     $scope.greeting = "Hello";
   })
@@ -11,6 +11,16 @@ angular.module('day3', ['ngRoute', 'menu', 'serviceExamples'])
       })
       .when('/services', {
         templateUrl: 'app/serviceExamples/serviceExamples.html'
+      })
+      .when('/promises', {
+        templateUrl: 'app/promiseExamples/promiseExamples.html',
+        contoller: 'PromiseExamplesController',
+        controllerAs: 'vm'
+      })
+      .when('/directives', {
+        templateUrl: 'app/directiveExamples/directiveExamples.html',
+        contoller: 'DirectiveExamplesController',
+        controllerAs: 'vm'
       })
       .otherwise ({
         redirectTo: '/'

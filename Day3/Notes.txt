@@ -5,4 +5,63 @@
 5. Resource : https://github.com/typicode/json-server
 6. Resource : https://github.com/marak/Faker.js/ (massive amounts of fake data)
 7. promises are returned when data is updated or such.
-8. 
+8. ng-options
+9. controllers - small, lean, initializing the model / no business logic / don't manipulate a DOM here.
+10. business logic - goes into services (.factory) or in directives (bulk of UI code)
+11. Resource : swapi (https://swapi.co/)
+12. Resource : http://www.zippopotam.us/
+13. Resource : http://pokeapi.co/
+14. Resource : https://randomuser.me/
+15. Resource : https://randomapi.com/
+16. Resource : http://deckofcardsapi.com/
+17. all support CORS
+18. Resource : http://developer.marvel.com/
+19. Device Emulation mode in Chrome dev tools.
+20. Providers / decorators - Provider is like a factory that can be configured before an actual factory is made.
+      constant, value, service, factory, provider (order of hierarchy)
+    decorator - augment or override a service.
+21. $delegate - is a service.
+22. Resource : http://odetocode.com/blogs/scott/archive/2013/06/06/decorating-angularjs-services.aspx
+23. constant cannot be decorated. anything else can be decorated (including directives and filters)
+24. Resource : http://briantford.com/blog/angular-hacking-core
+25. can call angular.moderator directly in 1.4
+26. constant - simple values (API_ROOT as an example)
+    values - shared objects in the app. (simple primitive property is not an object, so on change, it won't be reflected)
+           - object reference in the other case.
+    services - like JS constructors. useful in class based service creation.
+    factory - angular runs a function and you get back something.
+              as simple as .factory('five', function() { return 5; })
+    provider - complete control of actual instantiation of a service before angular uses it.
+    decorator - decorate a service. but the service needs to be present before you can decorate it.
+27. promises - promises, futures, defer.
+             - promising, a result of a future calculation or computation. promised some eventual result.
+             - return of $http.get is a promise (without a success handler or error) / you will get something back.
+             - capturing on to the uncertainty.
+             - promises don't have to be resolved or anything per se.
+             - angular is built on promises. uses/returns/depends.
+             - are housekeeping for callbacks.
+             - Resource : http://callbackhell.com/
+             - Resource : https://github.com/kriskowal/q
+             - known as thennables.
+             - you get a response object and not data.
+             - then's are guaranteed to return another promise.
+             - underlying service is $q. (based on Kris Kowal's JS implementation)
+             - $q.all
+             - the success handler of $http get will check for 200-299 error codes and pass it to success or to error.
+             - $timeout - another promise generator
+             - $interval - promise generator
+             - similar to setTimeout, setInterval
+             - observables - promises over time. (collection of data over time)
+             - Resource : https://www.youtube.com/watch?v=XcRdO5QVlqE
+             - catch to catch the error
+             - catch is a then without a success handler. still returns a promise.
+             - you can attach then's to a catch as well.
+             - defer -> give me a deferred object. (manage our promises)
+             - defer.promise/resolve/reject/notify
+             - promises are great for long running operations (JS is single threaded).
+             - web workers?
+28. a, select, ng-* are directives. extends the vocabulary of html.
+29. anything angular recognizes in the DOM and executes them.
+30. Directives are Angular's killer features.
+31. Angular 2.0 -> route to components rather than templates/controllers.
+32. 
