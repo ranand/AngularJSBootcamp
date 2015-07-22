@@ -79,10 +79,14 @@
 67. Services - related code and data and put it under a name that can be injected.
 68. .service or .factory or .value or .constant or .provider or .decorator (can be a SERVICE) -all singletons
 69. CONST keyword in JS
-70. Constants are available during configuration. Other services are not.
+70. .constant's are available during configuration. Other services are not.
 71. with .value, you can change the value.
 72. anything within .service -> angular treats this as a constructor (call with new)
 73. Service vs factory : new is not called in factory. Whatever the function returns is the factory.
 74. Services needs to be built like JS constructors.
 75. Services were built for classes in typescript or coffeescript.
-76. 
+76. don't write constructors that return stuff.
+77. factories can return by itself as well.
+78. decorator - takes service/factory and augments it based on what is required.
+79. providers - configurable service object and returns value using $get. $get is executed on run phase.
+80. 

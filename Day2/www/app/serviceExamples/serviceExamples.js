@@ -36,7 +36,7 @@
       ])
 
       // Both controllers share the employeeList value service.
-      .controller('BetaController', function(employeeList, stringUtils, $log, stringUtilsFactory) {
+      .controller('BetaController', function(employeeList, stringUtils, $log, stringUtilsFactory, reverseString) {
         var vm = this;
         vm.addNewEmployee = function() {
           employeeList.push({name: 'Jess'});
@@ -46,6 +46,8 @@
         $log.log(stringUtils.makeLowerCase(myString));
 
         $log.log('factory : ' + stringUtilsFactory.makeLowerCase(myString));
+
+        $log.log('factory 2 : ' + reverseString(myString));
       })
 
       .service('stringUtils', function() {
@@ -68,6 +70,13 @@
           makeLowerCase : function(s) {
             return s.toLowerCase();
           }
+        }
+      })
+
+      // factory can return by itself.
+      .factory('reverseString', function() {
+        return function(s) {
+          return "this is some reversed string";
         }
       })
 
