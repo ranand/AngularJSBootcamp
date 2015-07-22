@@ -1,0 +1,8 @@
+1. JSON server - utility.
+2. json-server mock-api.js
+3. npm install -g json-serve
+4. Resource : https://egghead.io/lessons/nodejs-creating-demo-apis-with-json-server
+5. Resource : https://github.com/typicode/json-server
+6. Resource : https://github.com/marak/Faker.js/ (massive amounts of fake data)
+7. promises are returned when data is updated or such.
+8. 

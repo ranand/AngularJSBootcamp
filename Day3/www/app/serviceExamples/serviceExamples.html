@@ -1,0 +1,23 @@
+<h2>Service Examples</h2>
+<!-- <div ng-controller="AlphaController as vm">
+  <p>First Number: <input ng-model="vm.num1"></p>
+  <p>Second Number: <input ng-model="vm.num2"></p>
+  <p>Sum: <input ng-model="vm.sum"></p>
+  <p>Difference: <input ng-model="vm.diff"></p>
+  <button ng-click="vm.getResult()">Get Result</button>
+</div> -->
+
+<!-- <div ng-controller="PeopleController as vm">
+  <pre ng-bind="vm.people | json"></pre>
+  <span ng-repeat="person in vm.people">
+    {{ person.firstname }}
+  </span>
+</div> -->
+
+<div ng-controller="CompanyController as vm">
+  <p>Id : <input ng-model="vm.company_id"></p>
+  <p>Name : <input ng-model="vm.company_name"></p>
+  <p><button ng-click="vm.getCompany()">Get Company</button></p>
+  <p><button ng-click="vm.changeCompanyDetails()">Change Details</button></p>
+  <pre ng-bind="vm.company | json"></pre>
+</div>

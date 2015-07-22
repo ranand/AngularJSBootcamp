@@ -2,7 +2,7 @@
 2. npm install bower --save (bower is a package manager)
 3. npm - for tooling (dev environment, automation tools like gulp or grunt) - server dependencies.
 4. bower - focused on client side dependencies (things that run inside the browser)
-5. two PM's exists because of dependency models.
+5. two package manager's exists because of dependency models.
 6. bower - flat dependency model.
 7. npm install gulp gulp-connect --save
 8. gulp - automation utility. (JS version) (grunt and broccoli are alternatives) - similar to rake in rails
@@ -89,4 +89,4 @@
 77. factories can return by itself as well.
 78. decorator - takes service/factory and augments it based on what is required.
 79. providers - configurable service object and returns value using $get. $get is executed on run phase.
-80. 
+80.
