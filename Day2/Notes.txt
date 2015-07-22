@@ -77,5 +77,8 @@
 65. gulp - use refs (plugin to annotate, uglify or minify)
 66. Resource : gulp-inject (https://www.npmjs.com/package/gulp-inject)
 67. Services - related code and data and put it under a name that can be injected.
-68. .service or .factory or .value or .constant or .provider or .decorator (can be a SERVICE)
-69. 
+68. .service or .factory or .value or .constant or .provider or .decorator (can be a SERVICE) -all singletons
+69. CONST keyword in JS
+70. Constants are available during configuration. Other services are not.
+71. with .value, you can change the value.
+72. 

@@ -1,5 +1,10 @@
 <h2> Service Examples..  </h2>
 
-<div ng-controller="AlphaController as vm">
-  Stuff : {{vm.stuff}}
+<div ng-controller="AlphaController as vm" style="border: 3px solid red;">
+  <p>Stuff : {{vm.stuff}}</p>
+  <p>Application Name : {{vm.appName}}</p>
+  <pre ng-bind="vm.employeeList | json"></pre>
+</div>
+<div ng-controller="BetaController as vm" style="border: 3px solid green;">
+  <button ng-click="vm.addNewEmployee()">Add Employee</button>
 </div>
