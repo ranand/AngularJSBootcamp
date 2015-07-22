@@ -1,12 +1,20 @@
 //IIFE trick
 ;(function() {
 
+    'use strict';
+
     angular.module('serviceExamples', [])
-      .controller('AlphaController', function(APP_NAME, employeeList) {
+      .controller('AlphaController', function(APP_NAME, employeeList, stringUtils, $log, stringUtilsFactory) {
           var vm = this;
           vm.stuff = "Here it is";
           vm.appName = APP_NAME;
           vm.employeeList = employeeList;
+
+          var original = 'this is a string';
+
+          $log.log(stringUtils.makeUpperCase(original));
+
+          $log.log('factory : ' + stringUtilsFactory.makeUpperCase(original));
       })
       // create a constant that can be injected.
       // this can't be changed. When injected, creates a copy.
@@ -28,14 +36,42 @@
       ])
 
       // Both controllers share the employeeList value service.
-      .controller('BetaController', function(employeeList) {
+      .controller('BetaController', function(employeeList, stringUtils, $log, stringUtilsFactory) {
         var vm = this;
         vm.addNewEmployee = function() {
           employeeList.push({name: 'Jess'});
         };
+
+        var myString = 'THIS IS UPPERCASE STRING';
+        $log.log(stringUtils.makeLowerCase(myString));
+
+        $log.log('factory : ' + stringUtilsFactory.makeLowerCase(myString));
       })
-      // .service('myService', function($http) {
-      //
-      // })
+
+      .service('stringUtils', function() {
+        // angular treats this as a constructor (call with new)
+        this.makeUpperCase = function(s) {
+          return s.toUpperCase();
+        };
+
+        this.makeLowerCase = function(s) {
+          return s.toLowerCase();
+        };
+      })
+
+      .factory('stringUtilsFactory', function() {
+        // new is not called here. whatever is returned is the factory.
+        return {
+          makeUpperCase : function(s) {
+            return s.toUpperCase();
+          },
+          makeLowerCase : function(s) {
+            return s.toLowerCase();
+          }
+        }
+      })
+
+    // close the module
+    ;
 
 })();

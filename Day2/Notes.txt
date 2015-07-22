@@ -81,4 +81,8 @@
 69. CONST keyword in JS
 70. Constants are available during configuration. Other services are not.
 71. with .value, you can change the value.
-72. 
+72. anything within .service -> angular treats this as a constructor (call with new)
+73. Service vs factory : new is not called in factory. Whatever the function returns is the factory.
+74. Services needs to be built like JS constructors.
+75. Services were built for classes in typescript or coffeescript.
+76. 

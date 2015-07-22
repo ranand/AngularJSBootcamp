@@ -4,7 +4,8 @@ angular.module('day2', [
   'ngRoute',
   'controllerExamples',
   'watchExamples',
-  'serviceExamples'
+  'serviceExamples',
+  'menu'
 ])
   // followed by a controller.
   // inject $scope
@@ -18,7 +19,9 @@ angular.module('day2', [
     $routeProvider
       .when('/', {
         //template: 'This is where my menu will live.'
-        templateUrl: 'app/menu/menu.html'
+        templateUrl: 'app/menu/menu.html',
+        controller: 'MenuController',
+        controllerAs: 'vm'
       })
       .when('/controllers', {
         //template: 'This is where my menu will live.'
