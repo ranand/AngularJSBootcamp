@@ -64,4 +64,9 @@
 29. anything angular recognizes in the DOM and executes them.
 30. Directives are Angular's killer features.
 31. Angular 2.0 -> route to components rather than templates/controllers.
-32. 
+32. Resource : http://ngmodules.org/
+33. abc-logo tag needs to be named as abcLogo (legal JS identifier)
+34. Angular2.0 will let you name them whatever you want it to be.
+35. transclude : true -> include extra text inside the new html tag we created. (<span ng-transclude></span>)
+36. es-lint/jshint
+37. 

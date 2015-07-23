@@ -40,7 +40,10 @@
         }
 
         function getPerson(id) {
-          return $http.get('http://localhost:3000/people/' + id);
+          return $http.get('http://localhost:3000/people/' + id)
+            .then(function(response) {
+              return response.data;
+            })
         }
 
         function updatePerson(id, newData) {

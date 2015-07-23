@@ -1,0 +1,14 @@
+<div>
+  <p><input ng-model="person.firstname"></p>
+  <p>Name: {{person.firstname}} {{person.lastname}}</p>
+
+  <div ng-show="expanded">
+    Address:
+      <p ng-show="!editing">Street: {{person.address.street}}</p>
+      <p ng-show="editing"><input ng-model="person.address.street"></p>
+      <!-- <button ng-click="editing = !editing">toggle editing</button> -->
+  </div>
+
+  <button ng-click="expanded = !expanded">toggle address</button>
+
+</div>

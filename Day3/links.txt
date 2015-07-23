@@ -1,0 +1,110 @@
+# Links often discussed or mentioned in Oasis Digital Angular classes
+
+Oasis Digital Training - class example repositories
+https://bitbucket.org/od-training
+
+AngularJS Tutorial
+https://docs.angularjs.org/tutorial
+
+AngularJS Expressions Cheatsheet
+teropa.info/blog/2014/03/23/angularjs-expressions-cheatsheet.html
+
+ngAnnotate - Prepare Angular code for minification
+https://github.com/olov/ng-annotate
+
+Animate.css - Just-add-water CSS animations
+http://daneden.github.io/animate.css/
+
+ngFx - Animation library for Angular
+https://github.com/Hendrixer/ngFx
+
+JSHint - Detect errors & potential problems in your JavaScript code
+http://jshint.com
+
+ESLint - The pluggable linting utility for JavaScript and JSX
+http://eslint.org
+
+"Thinking in AngularJS" if I have a jQuery background? - Stack Overflow
+http://stackoverflow.com/a/15012542
+
+ng-book by Ari Lerner
+https://www.ng-book.com
+
+Philip Roberts: What the heck is the event loop anyway? | JSConf EU 2014 - YouTube
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
+Kris Kowal's Q Promises Library
+https://github.com/kriskowal/q
+
+Callback Hell - A guide to writing asynchronous javascript programs
+http://callbackhell.com
+
+Christian Lilley - Going Postal with Angular in Promises - NG-Conf - YouTube
+https://www.youtube.com/watch?v=XcRdO5QVlqE
+
+John Papa - Angular Style Guide
+https://github.com/johnpapa/angular-styleguide
+
+Angular UI
+https://angular-ui.github.io
+
+Angular UI Bootstrap
+http://angular-ui.github.io/bootstrap/
+
+Bootstrap CSS framework
+http://getbootstrap.com
+
+Angular Material - Google Material Design in Angular
+https://material.angularjs.org
+
+Vojta Jina on testing Angular directives
+https://github.com/vojtajina/ng-directive-testing
+https://www.youtube.com/watch?v=rB5b67Cg6bc
+
+Understanding Scopes
+https://github.com/angular/angular.js/wiki/Understanding-Scopes
+
+Understanding Directives
+https://github.com/angular/angular.js/wiki/Understanding-Directives
+
+egghead.io - Bite-sized video training for AngularJS (etc.)
+https://egghead.io
+
+Angular Modules - Find Modules for AngularJS
+http://ngmodules.org/
+
+UnderscoreJS & Lo-dash - JS libraries of functional programming helpers
+https://lodash.com
+http://underscorejs.org
+http://stackoverflow.com/questions/13789618/differences-between-lodash-and-underscore
+
+Kendo UI jQuery and HTML5 widgets
+http://www.telerik.com/kendo-ui
+http://docs.telerik.com/kendo-ui/AngularJS/introduction
+
+Angular Formly - JavaScript Powered Forms for AngularJS
+http://formly-js.github.io/angular-formly/#/
+
+Ionic: Advanced HTML5 Hybrid Mobile App Framework
+http://ionicframework.com
+
+How I've Improved My Angular Apps by Banning ng-controller
+http://teropa.info/blog/2014/10/24/how-ive-improved-my-angular-apps-by-banning-ng-controller.html
+
+IIFE discussion
+http://benalman.com/news/2010/11/immediately-invoked-function-expression/
+
+Strict mode - JavaScript | MDN
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+
+Accessibility with ngAria
+https://docs.angularjs.org/guide/accessibility
+
+Adventures in Angular Podcast Episode 027 - Accessibility with Marcy Sutton
+http://devchat.tv/adventures-in-angular/027-aia-accessibility-with-marcy-sutton
+
+Microsoft Visual Studio Code Editor
+https://code.visualstudio.com/
+
+JetBrains WebStorm JavaScript IDE
+https://www.jetbrains.com/webstorm/

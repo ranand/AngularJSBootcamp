@@ -19,7 +19,7 @@ angular.module('day3', ['ngRoute', 'menu', 'serviceExamples', 'promiseExamples',
       })
       .when('/directives', {
         templateUrl: 'app/directiveExamples/directiveExamples.html',
-        contoller: 'DirectiveExamplesController',
+        controller: 'DirectiveExamplesController',
         controllerAs: 'vm'
       })
       .otherwise ({
